@@ -42,6 +42,7 @@ p {
 .main .cd1 {
     width: 20%;
     height: 300px;
+    border: rgb(200, 200, 200) solid 1px;
 }
 
 .main .ok {
