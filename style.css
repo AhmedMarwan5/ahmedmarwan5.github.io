@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: 300ms ease-in-out;
+}
+:root{
+    --main-bg-clr: rgb(10, 10, 10);
+    --div-bg-clr: rgb(255, 255, 255);
+    --elements-bg-clr: rgb(10, 10, 10);
+    --elements-hvr-clr: rgb(160, 0, 0);
+    --li-bg-clr: rgb(10, 10, 10);
+}
+body{
+    background-color: var(--main-bg-clr);
+    color: black;
+    font-family: Arial;
+    user-select: none;
+    /* scroll-behavior: smooth; */
+}
+.root{
+    width: 90vw;
+    margin: 20px auto;
+}
+header{
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+    height: 150px;
+    background-color: var(--div-bg-clr);
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid white;
+}
+h1{
+    letter-spacing: 6px;
+    font-weight: 900;
+}
+hr{
+    border-width: 1px;
+    border-style: dashed;
+    margin: 10px 0;
+}
+header button{
+    width: 90%;
+    height: 30px;
+    font-size: 27px;
+    border-radius: 15px;
+    margin: 8px auto;
+}
+button{
+    border: none;
+    background-color: var(--elements-bg-clr);
+    color: white;
+}
+button:hover{
+    background-color: var(--elements-hvr-clr); 
+    transform: scale(1.0);
+}
+input{
+    border: none;
+    outline: none;
+    padding: 5px 1rem;
+    width: 85%;
+    height: 30px;
+    background-color: var(--elements-bg-clr);
+    color: white;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+input:focus{
+    background-color: var(--elements-hvr-clr);
+    transform: scale(1.05);
+}
+input::placeholder{
+    color: rgb(80, 80, 80);
+}
+input:focus::placeholder{
+    color: rgb(121, 138, 156);
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    display: none;
+}
+.delete-div input{
+    width: 25%;
+}
+.tasks-div{
+    width: 95%;
+    height: fit-content;
+    margin: 15px auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: var(--div-bg-clr);
+    text-align: center;
+}
+h2{
+    margin: 10px 0;
+    letter-spacing: 6px;
+    font-weight: 900;
+}
+.tasks-div p{
+    font-size: 14px;
+}
+ul{
+    list-style: none;
+    margin: 10px 0;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background-color: var(--li-bg-clr);
+    border-radius: 12px;
+    border: 1px dashed white;
+    margin: 15px 0;
+}
+li p{
+    color: white;
+    height: 100%;
+    justify-self: center;
+    flex-grow: 1;
+    padding-top: 10px;
+}
+li button{
+    border: none;
+    height: 100%;
+    width: 40px;
+    border-radius: 0 12px 12px 0;
+    font-size: 25px;
+    color: white;
+    background-color: rgb(80, 80, 80);
+    align-self: flex-end;
+    border-left: 1px dashed white;
+}
+.update-btn{
+    border-radius: 0;
+}
+.update-btn:hover{
+    background-color: rgb(230, 230, 26);
+}
+li button:hover{
+    background-color: var(--elements-hvr-clr);
+    border: none;
+    transform: scale(1.1);
+}
+#deleteAllDiv button{
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    margin: 8px auto;
+}
+.hidden{
+    display: none;
+}
