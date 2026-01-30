@@ -67,6 +67,11 @@ p, span, pre {
     color: var(--clr-primary);
 }
 
+.buttons-wrapper {
+    display: flex;
+    gap: 1.5rem;
+}
+
 a.button {
     cursor: pointer;
     background-color: var(--clr-button);
