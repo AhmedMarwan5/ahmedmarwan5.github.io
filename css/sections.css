@@ -55,3 +55,45 @@
 .navigation-links li a:hover {
     color: var(--clr-text-main);
 }
+
+/* =========================
+   HERO
+========================= */
+.section.hero {
+    background: var(--clr-bg-light);
+    padding: var(--space-hero-padding);
+    position: relative;
+}
+
+.section.hero h1 {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.section.hero .subheading {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.section.hero .container {
+    z-index: 999;
+}
+
+.section.hero .buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.section.hero .glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -60%;
+    width: 31.25rem;
+    height: 31.25rem;
+    border-radius: 1000px;
+    background-color: var(--clr-primary);
+    opacity: 0.4;
+    filter: blur(150px);
+}
