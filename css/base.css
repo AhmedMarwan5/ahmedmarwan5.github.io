@@ -55,6 +55,10 @@ body {
     color: var(--clr-text-main);
 }
 
+p, span, pre {
+    color: var(--clr-text-muted);
+}
+
 .subheading {
     color: var(--clr-text-muted);
 }
