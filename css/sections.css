@@ -80,9 +80,7 @@
 }
 
 .section.hero .buttons-wrapper {
-    display: flex;
     justify-content: center;
-    gap: 1.5rem;
 }
 
 .section.hero .glow {
@@ -96,4 +94,35 @@
     background-color: var(--clr-primary);
     opacity: 0.4;
     filter: blur(150px);
+}
+
+/* =========================
+   ABOUT
+========================= */
+.section.about .container{
+    display: flex;
+    justify-content: stretch;
+    gap: 3rem;
+}
+
+.section.about .left, .section.about .right {
+    flex: 1;
+    min-width: 0;
+}
+
+.section.about .left .heading {
+    margin-bottom: 1.5rem;
+}
+
+.section.about .left .paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.section.about .right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
 }
