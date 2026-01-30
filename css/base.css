@@ -1,0 +1,103 @@
+/* =========================
+   VARIABLES & COLORS
+========================= */
+:root {
+    /* background colors */
+    --clr-bg-main: hsl(230, 50%, 5%);
+    --clr-bg-light: hsl(from var(--clr-bg-main) h s calc(l + 5));
+    --clr-bg-lighter: hsl(from var(--clr-bg-main) h s calc(l + 10));
+    --clr-bg-lightest: hsl(from var(--clr-bg-main) h s calc(l + 15));
+    /* text colors */
+    --clr-text-main: hsl(0, 0%, 100%);
+    --clr-text-muted: hsl(0, 0%, 80%);
+    /* brand colors */
+    --clr-primary: hsl(230, 100%, 60%);
+    /* button  colors */
+    --clr-button: var(--clr-primary);
+    --clr-button-hover: hsl(from var(--clr-button) h s calc(l + 2));
+    --clr-button-press: hsl(from var(--clr-button) h s calc(l + 5));
+
+
+    /* spacing */
+    --space-container-width: min(80rem, calc(100% - 2.5rem));
+    --space-section-padding: 7rem;
+    --space-hero-padding: calc(10.5rem + calc(6.25rem / 2)) 0 10.5rem;
+
+    /* transition */
+    --transition: 200ms ease-in-out;
+
+    /* box shadow */
+    --glow: 0 0 30px hsl(from var(--clr-primary) h s l / 0.6);
+    --glow-weak: 0 0 30px hsl(from var(--clr-primary) h s l / 0.5);
+
+    /* border radius */
+    --br-button: 4px;
+}
+
+
+/* =========================
+   GLOBAL & RESETS
+========================= */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    scroll-padding-top: 6.25rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--clr-bg-main);
+    color: var(--clr-text-main);
+}
+
+.subheading {
+    color: var(--clr-text-muted);
+}
+
+.tag {
+    color: var(--clr-primary);
+}
+
+a.button {
+    padding: 1rem 2rem;
+    cursor: pointer;
+    background-color: var(--clr-button);
+    border-radius: var(--br-button);
+    box-shadow: var(--glow);
+}
+
+a.button:hover {
+    background-color: var(--clr-button-hover);
+}
+
+a.button:active {
+    background-color: var(--clr-button-press);
+}
+
+a.button.secondary {
+    background-color: transparent;
+    border: 1px solid var(--clr-text-main);
+    box-shadow: none;
+}
+
+.container {
+    height: 100%;
+    width: var(--space-container-width);
+}
+
+.section {
+    width: var(--space-container-width);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section:not(.header, .footer) {
+    padding: var(--space-section-padding) 0;
+}
