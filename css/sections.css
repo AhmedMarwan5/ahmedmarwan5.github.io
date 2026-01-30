@@ -126,3 +126,47 @@
     height: auto;
     border-radius: 16px;
 }
+
+/* =========================
+   PROCESS
+========================= */
+.section.process {
+    background-color: var(--clr-bg-lighter);
+}
+
+.section.process .heading {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.section.process .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.section.process .cards .card {
+    flex: 1 1 calc(50% - 1rem);
+    padding: 2.5rem;
+    border-radius: 8px;
+    background-color: var(--clr-bg-lightest);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.section.process .cards .card .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 100px;
+    background-color: var(--clr-primary);
+    box-shadow: var(--glow);
+}
+
+.section.process .cards .card h3 {
+    margin-bottom: 0.5rem;
+}
