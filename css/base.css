@@ -64,9 +64,11 @@ body {
 }
 
 a.button {
-    padding: 1rem 2rem;
     cursor: pointer;
     background-color: var(--clr-button);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: var(--clr-text-main);
     border-radius: var(--br-button);
     box-shadow: var(--glow);
 }
