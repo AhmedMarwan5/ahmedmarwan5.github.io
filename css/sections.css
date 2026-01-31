@@ -66,21 +66,15 @@
 }
 
 .section.hero h1 {
-    text-align: center;
     margin-bottom: 1.25rem;
 }
 
 .section.hero .subheading {
-    text-align: center;
     margin-bottom: 2.5rem;
 }
 
 .section.hero .container {
     z-index: 999;
-}
-
-.section.hero .buttons-wrapper {
-    justify-content: center;
 }
 
 .section.hero .glow {
