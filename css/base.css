@@ -80,6 +80,7 @@ a.button {
     color: var(--clr-text-main);
     border-radius: var(--br-button);
     box-shadow: var(--glow);
+    transition: background-color var(--transition);
 }
 
 a.button:hover {
