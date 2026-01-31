@@ -160,7 +160,7 @@
 
 .section.process .cards .card:hover {
     transform: translateY(-8px);
-    box-shadow: var(--glow-hover);
+    box-shadow: var(--glow-hover-card);
 }
 
 .section.process .cards .card .icon {
