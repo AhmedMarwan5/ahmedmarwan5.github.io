@@ -155,6 +155,12 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 1.5rem;
+    transition: var(--transition);
+}
+
+.section.process .cards .card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--glow-hover);
 }
 
 .section.process .cards .card .icon {

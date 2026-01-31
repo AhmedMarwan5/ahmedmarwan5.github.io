@@ -24,11 +24,11 @@
     --space-hero-padding: calc(10rem + calc(5rem / 2)) 0 10rem;
 
     /* transition */
-    --transition: 200ms ease-in-out;
+    --transition: 300ms ease;
 
     /* box shadow */
     --glow: 0 0 30px hsl(from var(--clr-primary) h s l / 0.6);
-    --glow-weak: 0 0 30px hsl(from var(--clr-primary) h s l / 0.5);
+    --glow-hover: 0 32px 60px hsl(from var(--clr-primary) h s l / 0.3);
 
     /* border radius */
     --br-button: 4px;
