@@ -9,7 +9,7 @@
 }
 
 .section.header .container {
-    height: 6.25rem;
+    padding: 2rem 0;
     display: flex;
     justify-content: space-between;
 }
