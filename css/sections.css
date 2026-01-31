@@ -159,7 +159,7 @@
 }
 
 .section.process .cards .card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-4px);
     box-shadow: var(--glow-hover-card);
 }
 

@@ -29,7 +29,7 @@
     /* box shadow */
     --glow: 0 10px 30px hsl(from var(--clr-primary) h s l / 0.3);
     --glow-hover-button: 0 20px 50px hsl(from var(--clr-primary) h s l / 0.6); 
-    --glow-hover-card: 0 32px 60px hsl(from var(--clr-primary) h s l / 0.3);
+    --glow-hover-card: 0 32px 30px -10px hsl(from var(--clr-primary) h s l / 0.275);
 
     /* border radius */
     --br-button: 4px;
