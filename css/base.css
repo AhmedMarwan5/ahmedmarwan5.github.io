@@ -68,7 +68,12 @@ p, span, pre {
 }
 
 .tag {
+    display: inline-block;
     color: var(--clr-primary);
+    background: linear-gradient(90deg, var(--clr-primary), var(--clr-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .buttons-wrapper {
