@@ -10,6 +10,8 @@
     /* text colors */
     --clr-text-main: hsl(0, 0%, 100%);
     --clr-text-muted: hsl(0, 0%, 80%);
+    --clr-text-success: hsl(120, 100%, 50%);
+    --clr-text-error: hsl(0, 100%, 65%);
     /* brand colors */
     --clr-primary: hsl(230, 100%, 60%);
     --clr-secondary: hsl(305, 100%, 60%);

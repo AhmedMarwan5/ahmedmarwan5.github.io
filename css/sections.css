@@ -335,6 +335,26 @@ section.hero h1 {
     width: 100%;
 }
 
+.section.contact .right form .message {
+    display: none;
+    background-color: var(--clr-bg-lightest);    
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 4px;
+    font: var(--font-subheading);
+}
+
+.section.contact .right form .message.success {
+    display: block;
+    color: var(--clr-text-success);
+}
+
+.section.contact .right form .message.error {
+    display: block;
+    color: var(--clr-text-error);
+}
+
 /* ===========================================================================
     FOOTER
 =========================================================================== */
