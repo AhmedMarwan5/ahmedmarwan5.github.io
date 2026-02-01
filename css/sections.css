@@ -22,37 +22,6 @@
     font: var(--font-h3);
 }
 
-/* =============
-   NAVIGATION
-============ */
-
-.navigation {
-    height: 100%;
-}
-
-.navigation-links {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 2.5rem;
-    list-style: none;
-}
-
-.navigation-links li, .navigation-links li a{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navigation-links li a {
-    transition: color var(--transition);
-}
-
-.navigation-links li a:hover {
-    color: var(--clr-text-main);
-}
-
 /* =========================
    HERO
 ========================= */
@@ -296,6 +265,10 @@ section.hero h1 {
 /* =========================
    CONTACT
 ========================= */
+.section.contact {
+    background-color: var(--clr-bg-light);
+}
+
 .section.contact .container{
     display: flex;
     justify-content: space-between;
@@ -347,7 +320,7 @@ section.hero h1 {
 .section.contact .right form {
     width: 35rem;
     padding: 1.5rem;
-    background-color: var(--clr-bg-light);
+    background-color: var(--clr-bg-lighter);
     border-radius: 16px;
 }
 
@@ -368,4 +341,28 @@ section.hero h1 {
 
 .section.contact .right form button[type="submit"] {
     width: 100%;
+}
+
+/* =========================
+    FOOTER
+========================= */
+.section.footer {
+    background-color: var(--clr-bg-lighter);
+}
+
+.section.footer .container {
+    padding: var(--space-footer-padding);
+}
+
+.section.footer .content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+
+.section.footer .credits {
+    text-align: center;
+    padding-top: 1.75rem;
+    border-top: 1px solid hsl(from var(--clr-bg-main) h s calc(l + 30));
+    color: var(--clr-text-main);
 }

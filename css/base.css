@@ -18,12 +18,13 @@
     --clr-button: var(--clr-primary);
     --clr-button-hover: hsl(from var(--clr-button) h s calc(l + 2));
     --clr-button-press: hsl(from var(--clr-button) h s calc(l + 5));
-    --clr-input-focus: hsl(from var(--clr-bg-main) h s calc(l + 20));
+    --clr-input-focus: hsl(from var(--clr-bg-main) h s calc(l + 25));
 
     /* spacing */
     --space-container-width: min(80rem, calc(100% - 2.5rem));
     --space-section-padding: 5.5rem;
     --space-hero-padding: calc(10rem + calc(5.5rem / 2)) 0 10rem;
+    --space-footer-padding: 3rem 0;
 
     /* transition */
     --transition: 300ms ease;
@@ -131,7 +132,7 @@ label {
 }
 
 input, textarea {
-    background-color: var(--clr-bg-lighter);
+    background-color: var(--clr-bg-lightest);
     color: var(--clr-text-main);
     font: var(--font-body);
     letter-spacing: var(--ls-body);
@@ -153,6 +154,35 @@ textarea {
     padding-bottom: 10rem;
     resize: vertical;
 }
+
+
+.navigation {
+    height: 100%;
+}
+
+.navigation-links {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    list-style: none;
+}
+
+.navigation-links li, .navigation-links li a{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-links li a {
+    transition: color var(--transition);
+}
+
+.navigation-links li a:hover {
+    color: var(--clr-text-main);
+}
+
 
 .container {
     height: 100%;
