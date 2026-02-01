@@ -2,6 +2,7 @@
    HEADER
 ========================= */
 .section.header {
+    height: 5.5rem;
     position: fixed;
     top: 0;
     z-index: 9999;
@@ -9,7 +10,6 @@
 }
 
 .section.header .container {
-    padding: 2rem 0;
     display: flex;
     justify-content: space-between;
 }

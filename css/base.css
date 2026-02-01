@@ -23,7 +23,7 @@
     /* spacing */
     --space-container-width: min(80rem, calc(100% - 2.5rem));
     --space-section-padding: 6rem;
-    --space-hero-padding: calc(10rem + calc(5rem / 2)) 0 10rem;
+    --space-hero-padding: calc(10rem + calc(5.5rem / 2)) 0 10rem;
 
     /* transition */
     --transition: 300ms ease;
@@ -50,7 +50,7 @@
 
 html, body {
     height: 100%;
-    scroll-padding-top: 6.25rem;
+    scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
 }
 
