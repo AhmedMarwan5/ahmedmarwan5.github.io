@@ -12,6 +12,7 @@
     --clr-text-muted: hsl(0, 0%, 80%);
     /* brand colors */
     --clr-primary: hsl(230, 100%, 60%);
+    --clr-secondary: hsl(305, 100%, 60%);
     /* button  colors */
     --clr-button: var(--clr-primary);
     --clr-button-hover: hsl(from var(--clr-button) h s calc(l + 2));
@@ -118,6 +119,6 @@ a.button.secondary:hover {
     align-items: center;
 }
 
-.section:not(.header, .footer) {
+.section:not(.header, .footer) .container {
     padding: var(--space-section-padding) 0;
 }

@@ -60,34 +60,86 @@
    HERO
 ========================= */
 .section.hero {
-    background: var(--clr-bg-light);
-    padding: var(--space-hero-padding);
-    position: relative;
-}
-
-.section.hero h1 {
-    margin-bottom: 1.25rem;
-}
-
-.section.hero .subheading {
-    margin-bottom: 2.5rem;
+    background-color: hsl(from var(--clr-bg-lightest) h s l / 0.5);
 }
 
 .section.hero .container {
+    position: relative;
+    padding: var(--space-hero-padding);
     z-index: 999;
 }
 
-.section.hero .glow {
+section.hero h1 {
+    margin-bottom: 1.25rem;
+}
+
+.section.hero h1 span.highlight {
+    font: var(--font-h1);
+    background: linear-gradient(90deg, hsl(305, 100%, 50%), hsl(275, 100%, 50%), hsl(230, 100%, 60%), hsl(185, 100%, 50%), hsl(305, 100%, 50%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 200% 100%;
+    font-weight: 900;
+    animation: gradient-movement 1.5s linear infinite;
+}
+
+@keyframes gradient-movement {
+   0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.section.hero .subheading {
+    margin-bottom: 2rem;
+}
+
+.section.hero .shapes {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -60%;
-    width: 31.25rem;
-    height: 31.25rem;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-25%);
+    z-index: -1;
+    opacity: 0.5;
+    filter: blur(30px);
+}
+
+.section.hero .shapes .shape {
+    position: absolute;
+    aspect-ratio: 1 / 1;
     border-radius: 1000px;
+}
+
+.section.hero .shapes .shape-primary {
+    top: 100px;
+    right: 0;
     background-color: var(--clr-primary);
-    opacity: 0.4;
-    filter: blur(150px);
+    background: linear-gradient(90deg, hsl(230, 100%, 55%), hsl(305, 100%, 50%));
+    width: 480px;   
+    height: 480px;
+    animation: float 6.5s ease-in-out 0s infinite normal forwards;
+}
+
+.section.hero .shapes .shape-secondary {
+    bottom: 10%;
+    right: 30%;
+    background-color: var(--clr-secondary);
+    background: linear-gradient(90deg, hsl(185, 100%, 50%), hsl(298, 100%, 50%));
+    width: 300px;
+    height: 300px;
+    animation: float 6.5s ease-in-out 0.5s infinite normal forwards;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translate(0%, 0%) scale(1);
+    }
+    50% {
+        transform: translate(-56px, -56px) scale(1.1);
+    }
 }
 
 /* =========================
