@@ -22,7 +22,7 @@
 
     /* spacing */
     --space-container-width: min(80rem, calc(100% - 2.5rem));
-    --space-section-padding: 6rem;
+    --space-section-padding: 5.5rem;
     --space-hero-padding: calc(10rem + calc(5.5rem / 2)) 0 10rem;
 
     /* transition */
