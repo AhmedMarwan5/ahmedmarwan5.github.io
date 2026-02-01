@@ -3,7 +3,7 @@
 ========================= */
 :root {
     /* background colors */
-    --clr-bg-main: hsl(230, 50%, 5%);
+    --clr-bg-main: hsl(230, 65%, 5%);
     --clr-bg-light: hsl(from var(--clr-bg-main) h s calc(l + 5));
     --clr-bg-lighter: hsl(from var(--clr-bg-main) h s calc(l + 10));
     --clr-bg-lightest: hsl(from var(--clr-bg-main) h s calc(l + 15));
