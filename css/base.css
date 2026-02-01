@@ -24,7 +24,7 @@
     --space-container-width: min(80rem, calc(100% - 2.5rem));
     --space-section-padding: 5.5rem;
     --space-hero-padding: calc(10rem + calc(5.5rem / 2)) 0 10rem;
-    --space-footer-padding: 3rem 0;
+    --space-footer-padding: 2rem 0;
 
     /* transition */
     --transition: 300ms ease;
@@ -155,7 +155,6 @@ textarea {
     resize: vertical;
 }
 
-
 .navigation {
     height: 100%;
 }
@@ -183,6 +182,14 @@ textarea {
     color: var(--clr-text-main);
 }
 
+.logo {
+    height: 100%;
+    font: var(--font-h3);
+    color: var(--clr-text-main);
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
 
 .container {
     height: 100%;
