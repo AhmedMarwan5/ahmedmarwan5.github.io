@@ -59,10 +59,6 @@
 /* =========================
    HERO
 ========================= */
-.section.hero {
-    background-color: hsl(from var(--clr-bg-lightest) h s l / 0.5);
-}
-
 .section.hero .container {
     position: relative;
     padding: var(--space-hero-padding);
@@ -145,6 +141,10 @@ section.hero h1 {
 /* =========================
    ABOUT
 ========================= */
+.section.about {
+    background-color: var(--clr-bg-light);
+}
+
 .section.about .container{
     display: flex;
     justify-content: stretch;
