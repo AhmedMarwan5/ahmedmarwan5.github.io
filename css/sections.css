@@ -147,7 +147,7 @@ section.hero h1 {
 
 .section.about .container{
     display: flex;
-    justify-content: stretch;
+    align-items: center;
     gap: 3rem;
 }
 
